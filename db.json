@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "email": "luthernakumba2000@gmail.com",
+      "password": "U2FsdGVkX1/BMLZYEFX9LXLZhjNnEoNn5z7uz4HUTfk=",
+      "name": "Senzo",
+      "surname": "Nakumba",
+      "cell": "0665618953",
+      "id": 1
+    }
+  ],
+  "lists": [
+    {
+      "ownerId": 1,
+      "name": "My Groceries",
+      "createdAt": "2025-08-25T22:44:56.760Z",
+      "items": [
+        {
+          "name": "Spekko Rice",
+          "quantity": 5,
+          "notes": "5KG",
+          "category": "Staple foods",
+          "imageUrl": "",
+          "id": "QzlRC9ZKO1fysvsTm5Hpu"
+        },
+        {
+          "name": "White Star Maize Meal",
+          "quantity": 2,
+          "notes": "12KG",
+          "category": "Staple foods",
+          "imageUrl": "",
+          "id": "rK1gLapueNIZQTOXcjrA2"
+        },
+        {
+          "name": "Cabbage",
+          "quantity": 1,
+          "notes": "2KG",
+          "category": "Sishebo",
+          "imageUrl": "",
+          "id": "BkadpUKgxEJw84RjY1UxE"
+        }
+      ],
+      "id": 2
+    }
+  ]
+}
