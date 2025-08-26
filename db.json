@@ -2,11 +2,28 @@
   "users": [
     {
       "email": "luthernakumba2000@gmail.com",
-      "password": "U2FsdGVkX1/BMLZYEFX9LXLZhjNnEoNn5z7uz4HUTfk=",
+      "password": "U2FsdGVkX1+uYTQpoaCY63kLXShUyiAdBgjhI4k+qm0=",
       "name": "Senzo",
       "surname": "Nakumba",
       "cell": "0665618953",
       "id": 1
+    },
+    {
+      "email": "i@gmail.com",
+      "password": "U2FsdGVkX1/GnAPjfFZAzDjrnZVop3LVtdvTLIPj77o=",
+      "name": "Lihle",
+      "surname": "Nakumba",
+      "cell": "06976",
+      "id": 2
+    },
+    {
+      "email": "senzonakumba@gmail.com",
+      "password": "U2FsdGVkX18NmsKDTtD+2oD4fXQ32FLc3JRgaXLw2co=",
+      "name": "Senzo",
+      "surname": "Mna",
+      "cell": "0665618953",
+      "success": false,
+      "id": 3
     }
   ],
   "lists": [
@@ -41,6 +58,38 @@
         }
       ],
       "id": 2
+    },
+    {
+      "ownerId": 3,
+      "name": "Toiletries",
+      "createdAt": "2025-08-26T16:13:09.201Z",
+      "items": [
+        {
+          "name": "Tooth-Brush",
+          "quantity": 4,
+          "notes": "Make sure it is colgate brand",
+          "category": "Dental hygiene",
+          "imageUrl": "",
+          "id": "xYmY2wpxLJEOG7GPgK7fC"
+        },
+        {
+          "name": "Sunlight",
+          "quantity": 5,
+          "notes": "Make sure that it is Sunlight",
+          "category": "Soap",
+          "imageUrl": "",
+          "id": "BoMM4983hN4ba5X8tZMiM"
+        },
+        {
+          "name": "Colgate",
+          "quantity": 3,
+          "notes": "",
+          "category": "Dental hygiene",
+          "imageUrl": "",
+          "id": "--aF9mckEa0eBGs2uhkMX"
+        }
+      ],
+      "id": 3
     }
   ]
 }

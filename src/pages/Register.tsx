@@ -4,50 +4,105 @@ import { registerUser } from '../features/auth/authSlice'
 import type { RootState } from '../store'
 import { Link, Navigate } from 'react-router-dom'
 
-class RegisterInner extends React.Component<any, any>{
-  constructor(props:any){
+type RegisterState = {
+  email: string
+  password: string
+  name: string
+  surname: string
+  cell: string
+  success: boolean
+}
+
+class RegisterInner extends React.Component<any, RegisterState> {
+  constructor(props: any) {
     super(props)
-    this.state = { email:'', password:'', name:'', surname:'', cell:'' }
+    this.state = { 
+      email: '', 
+      password: '', 
+      name: '', 
+      surname: '', 
+      cell: '', 
+      success: false 
+    }
   }
-  handleSubmit = (e:React.FormEvent)=>{
+
+  handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    this.props.dispatch(registerUser(this.state))
+    try {
+      await this.props.dispatch(registerUser(this.state))
+      // ✅ After successful registration
+      this.setState({ success: true })
+    } catch (err) {
+      console.error(err)
+      alert("Registration failed, please try again")
+    }
   }
-  render(){
-    const { auth } = this.props
-    if (auth.user) return <Navigate to="/" replace />
+
+  render() {
+    const { success } = this.state
+
+    if (success) return <Navigate to="/login" replace />  // 👈 Redirects to Login
+
     return (
-      <div className="container grid" style={{maxWidth:520}}>
+      <div className="container grid" style={{ maxWidth: 520 }}>
         <h1>Register</h1>
         <form className="card grid" onSubmit={this.handleSubmit}>
-          <div className="grid cols-2">
-            <label className="field">
-              <span>Name</span>
-              <input required value={this.state.name} onChange={e=>this.setState({name:e.target.value})} />
-            </label>
-            <label className="field">
-              <span>Surname</span>
-              <input required value={this.state.surname} onChange={e=>this.setState({surname:e.target.value})} />
-            </label>
+          <div className="grid">
+            <label>Name</label>
+            <input 
+              type="text" 
+              value={this.state.name} 
+              onChange={e => this.setState({ name: e.target.value })} 
+              required 
+            />
+
+            <label>Surname</label>
+            <input 
+              type="text" 
+              value={this.state.surname} 
+              onChange={e => this.setState({ surname: e.target.value })} 
+              required 
+            />
+
+            <label>Cell</label>
+            <input 
+              type="text" 
+              value={this.state.cell} 
+              onChange={e => this.setState({ cell: e.target.value })} 
+              required 
+            />
+
+            <label>Email</label>
+            <input 
+              type="email" 
+              value={this.state.email} 
+              onChange={e => this.setState({ email: e.target.value })} 
+              required 
+            />
+
+            <label>Password</label>
+            <input 
+              type="password" 
+              value={this.state.password} 
+              onChange={e => this.setState({ password: e.target.value })} 
+              required 
+            />
           </div>
-          <label className="field">
-            <span>Cell number</span>
-            <input type="tel" required value={this.state.cell} onChange={e=>this.setState({cell:e.target.value})} />
-          </label>
-          <label className="field">
-            <span>Email</span>
-            <input type="email" required value={this.state.email} onChange={e=>this.setState({email:e.target.value})} />
-          </label>
-          <label className="field">
-            <span>Password</span>
-            <input type="password" required value={this.state.password} onChange={e=>this.setState({password:e.target.value})} />
-          </label>
-          <button className="btn primary" type="submit">Create Account</button>
-          <div className="muted">Have an account? <Link to="/login">Login</Link></div>
+
+          <button type="submit">Create Account</button>
         </form>
+
+        <p>
+          Already have an account? <Link to="/login">Login</Link>
+        </p>
       </div>
     )
   }
 }
 
-export default connect((s:RootState)=>({ auth: s.auth }))(RegisterInner)
+const mapStateToProps = (state: RootState) => ({
+  auth: state.auth
+})
+
+export const Register = connect(mapStateToProps)(RegisterInner)
+export default Register

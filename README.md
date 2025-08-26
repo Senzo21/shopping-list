@@ -3,7 +3,7 @@
 =======
 # Task 5: Shopping List App (React + Vite + TS + Redux Toolkit)
 
-A complete implementation for the "ReactTS - Task 5 - Shopping List App" brief.
+A complete implementation for the "ReactTS - Task 5 - Shopping List App" brief. This project helps users manage shopping lists.
 Uses `json-server` for persistence, `redux-toolkit` for state, `react-router-dom@6`,
 and AES encryption via `crypto-js` for demo-only credential protection.
 
