@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "email": "luthernakumba2000@gmail.com",
+      "password": "U2FsdGVkX1+uYTQpoaCY63kLXShUyiAdBgjhI4k+qm0=",
+      "name": "Senzo",
+      "surname": "Nakumba",
+      "cell": "0665618953",
+      "id": 1
+    },
+    {
+      "email": "i@gmail.com",
+      "password": "U2FsdGVkX1/GnAPjfFZAzDjrnZVop3LVtdvTLIPj77o=",
+      "name": "Lihle",
+      "surname": "Nakumba",
+      "cell": "06976",
+      "id": 2
+    },
+    {
+      "email": "senzonakumba@gmail.com",
+      "password": "U2FsdGVkX18NmsKDTtD+2oD4fXQ32FLc3JRgaXLw2co=",
+      "name": "Senzo",
+      "surname": "Mna",
+      "cell": "0665618953",
+      "id": 3
+    },
+    {
+      "email": "senzonaks@gmail.com",
+      "password": "U2FsdGVkX1//cMhAZPN70BL3kgxbdEO//jJWg8MPKJ0=",
+      "name": "Senzo",
+      "surname": "Nakumba",
+      "cell": "0665618953",
+      "id": 4
+    }
+  ],
+  "lists": [
+    {
+      "ownerId": 1,
+      "name": "My Groceries",
+      "createdAt": "2025-08-25T22:44:56.760Z",
+      "items": [
+        {
+          "name": "Spekko Rice",
+          "quantity": 5,
+          "notes": "5KG",
+          "category": "Staple foods",
+          "imageUrl": "",
+          "id": "QzlRC9ZKO1fysvsTm5Hpu"
+        },
+        {
+          "name": "White Star Maize Meal",
+          "quantity": 2,
+          "notes": "12KG",
+          "category": "Staple foods",
+          "imageUrl": "",
+          "id": "rK1gLapueNIZQTOXcjrA2"
+        },
+        {
+          "name": "Cabbage",
+          "quantity": 1,
+          "notes": "2KG",
+          "category": "Sishebo",
+          "imageUrl": "",
+          "id": "BkadpUKgxEJw84RjY1UxE"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "ownerId": 3,
+      "name": "Toiletries",
+      "createdAt": "2025-08-26T16:13:09.201Z",
+      "items": [
+        {
+          "name": "Tooth-Brush",
+          "quantity": 4,
+          "notes": "Make sure it is colgate brand",
+          "category": "Dental hygiene",
+          "imageUrl": "",
+          "id": "xYmY2wpxLJEOG7GPgK7fC"
+        },
+        {
+          "name": "Sunlight",
+          "quantity": 5,
+          "notes": "Make sure that it is Sunlight",
+          "category": "Soap",
+          "imageUrl": "",
+          "id": "BoMM4983hN4ba5X8tZMiM"
+        },
+        {
+          "name": "Colgate",
+          "quantity": 3,
+          "notes": "",
+          "category": "Dental hygiene",
+          "imageUrl": "",
+          "id": "--aF9mckEa0eBGs2uhkMX"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "ownerId": 4,
+      "name": "Groceries",
+      "createdAt": "2026-02-26T13:03:25.394Z",
+      "items": [
+        {
+          "name": "Colgate",
+          "quantity": 1,
+          "notes": "",
+          "category": "Toiletries",
+          "imageUrl": "",
+          "id": "bwsF50sDnO-WDAMDTdFGK"
+        }
+      ],
+      "id": 4
+    }
+  ]
+}
