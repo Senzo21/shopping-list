@@ -52,6 +52,3 @@ Focus styles, aria labels, tab order, and hover cues are included. Responsive br
 ## JSON Server data model
 - `users`: `{ id, email, password, name, surname, cell }`
 - `lists`: `{ id, ownerId, name, createdAt, items: [{ id, name, quantity, notes, category, imageUrl }] }`
-
-## Branching (as per brief)
-- Use `main` for planning (moodboard, steps, pseudocode) and `development` for active code commits.
